@@ -181,6 +181,37 @@ body {
   line-height: 1.8;
   color: var(--white);
 }
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* LINK WRAPPER */
+.social-item {
+  display: flex;
+  align-items: center; /* 🔥 ini bikin text di tengah icon */
+  gap: 10px;
+
+  text-decoration: none;
+  color: var(--white);
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* ICON */
+.social-item img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+/* HOVER EFFECT */
+.social-item:hover {
+  transform: translateX(5px);
+  color: var(--primary);
+}
 
 #home {
   padding-top: 120px;
